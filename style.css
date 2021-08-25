@@ -1,0 +1,419 @@
+.root
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subroot1
+{
+    display: flex;
+    flex-direction: row;
+}
+.subroot1class
+{
+    width: 70px;
+    height: 70px;
+    background-color: dodgerblue;
+    margin: 30px;
+    animation-name: first-row;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    
+}
+@keyframes first-row {
+    0%
+    {
+        transform: skewX(0deg);
+    }
+    25%
+    {
+        transform: skewX(-30deg);
+    }
+    50%
+    {
+        transform: skewX(0deg);
+    }
+    75%
+    {
+        transform: skewX(30deg);
+    }
+    100%
+    {
+        transform: skewX(0deg);
+    }
+}
+
+.subroot2
+{
+    display: flex;
+    flex-direction: row;
+}
+.subroot2class
+{
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    margin: 30px;
+    animation-name: second-row;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes second-row {
+    0%
+    {
+        transform: skewY(0deg);
+    }
+    25%
+    {
+        transform: skewY(-30deg);
+    }
+    50%
+    {
+        transform: skewY(0deg);
+    }
+    75%
+    {
+        transform: skewY(30deg);
+    }
+    100%
+    {
+        transform: skewY(0deg);
+    }
+}
+
+.subroot3
+{
+    display: flex;
+    flex-direction: row;
+}
+.subroot3class
+{
+    width: 70px;
+    height: 70px;
+    background-color: dodgerblue;
+    margin: 30px;
+    animation-name: third-row;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes third-row {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.subroot4
+{
+    display: flex;
+    flex-direction: row;
+}
+.subroot4class1
+{
+    width: 70px;
+    height: 70px;
+    background-color: dodgerblue;
+    margin: 30px;
+    animation-name: forth-row1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes forth-row1 {
+    50%
+    {
+        transform: rotateX(70deg);
+    }
+}
+.subroot4class2
+{
+    width: 70px;
+    height: 70px;
+    background-color: purple;
+    margin: 30px;
+    animation-name: forth-row2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes forth-row2 {
+    50%
+    {
+        transform: rotateY(70deg);
+    }
+}
+.subroot4class3
+{
+    width: 70px;
+    height: 70px;
+    background-color: lightgreen;
+    margin: 30px;
+    animation-name: forth-row3;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes forth-row3 {
+    50%
+    {
+        transform: rotate(90deg);
+    }
+}
+
+.root2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub2root
+{
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    margin: 30px;
+    
+}
+.sub2root1:hover
+{
+    animation-name: first;
+    animation-duration: 3s;
+}
+@keyframes first {
+    50%
+    {
+        transform: scaleX(4);
+    }
+}
+.sub2root2:hover
+{
+    animation-name: second;
+    animation-duration: 3s;
+}
+@keyframes second {
+    50%
+    {
+        transform: scale(4);
+    }
+}
+.sub2root3:hover
+{
+    animation-name: third;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.39,.14,.26,.99);
+}
+@keyframes third {
+    50%
+    {
+        transform: scaleX(4);
+    }
+}
+.sub2root4:hover
+{
+    animation-name: forth;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.33,.33,.56,.56);
+}
+@keyframes forth {
+    50%
+    {
+        transform: scaleX(4);
+    }
+}
+.sub2root5:hover
+{
+    animation-name: fifth;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(1,0,.74,.74);
+}
+@keyframes fifth {
+    50%
+    {
+        transform: scaleX(4);
+    }
+}
+.sub2root6:hover
+{
+    animation-name: sixth;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.23,.22,.3,.99);
+}
+@keyframes sixth {
+    50%
+    {
+        transform: scaleX(4);
+    }
+}
+.sub2root7:hover
+{
+    animation-name: seventh;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.74,.01,.3,.99);
+}
+@keyframes seventh {
+    50%
+    {
+        transform: scaleX(4);
+    }
+}
+
+.root3
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.sub3root1
+{
+    position: absolute;
+    background-image: url(./img/city.png);
+    height: 250px;
+    width: 500%;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes city {
+    100%
+    {
+        transform: translate(-1400px);
+    }
+}
+.sub3root2
+{
+    position: absolute;
+    width: 500%;
+    height: 200px;
+    display: block;
+    background-image: url(./img/road.jpg);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation-name: highway;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes highway {
+    100%
+    {
+        transform: translate(-3200px);
+    }
+}
+
+.car
+{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img{
+    width: 100%;
+    animation: car 1s liner infinite;
+}
+@keyframes car {
+    100%
+    {
+        transform: translate(-1px);
+    }
+    50%
+    {
+        transform: translate(1px);
+    }
+    0%
+    {
+        transform: translate(-1px);
+    }
+}
+.wheel
+{
+    left: 50%;
+    bottom: 178px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img{
+    width: 72px;
+    height: 72px;
+    animation: wheel 0.1s linear infinite;
+}
+@keyframes wheel {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.back-wheel
+{
+    left: -165px;
+    position: absolute;
+
+}
+.front-wheel
+{
+    left: 80px;
+    position: absolute;
+}
+.sub3root3
+{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.sub3root3class
+{
+    margin: 0px 5px 20px;
+    padding: 5px;
+    color: black;
+}
+.sub3root3class1
+{
+    background-color: orange;
+}
+.sub3root3class2
+{
+    background-color: white;
+}
+.sub3root3class3
+{
+    background-color: green;
+}
+.sub3root4
+{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 2;
+    animation: sun 15s linear infinite;
+}
+@keyframes sun {
+    100%
+    {
+        transform: translateX(-200px);
+    }
+}
+.sub3root5
+{
+    position: absolute;
+    left: 730px;
+    top: 455px;
+    z-index: 3;
+}
